@@ -17,141 +17,155 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Account and organization",
+            "group": "Features",
             "pages": [
-              "getting-started/sign-up",
-              "getting-started/log-in",
-              "getting-started/create-organization",
-              "getting-started/join-organization",
-              "getting-started/onboarding",
-              "getting-started/stripe-connect",
-              "getting-started/bank-details",
-              "getting-started/user-preferences",
-              "getting-started/switching-clubs",
-              "getting-started/troubleshooting"
-            ]
-          },
-          {
-            "group": "Members",
-            "pages": [
-              "members/overview",
-              "members/add-members",
-              "members/csv-upload",
-              "members/custom-columns",
-              "members/roles-and-permissions",
-              "members/edit-and-remove",
-              "members/profile-pictures",
-              "members/filters-and-search",
-              "members/public-join",
-              "members/troubleshooting"
-            ]
-          },
-          {
-            "group": "Groups",
-            "pages": [
-              "groups/overview",
-              "groups/create-groups",
-              "groups/assign-members",
-              "groups/using-groups-in-emails",
-              "groups/using-groups-for-events",
-              "groups/troubleshooting"
-            ]
-          },
-          {
-            "group": "Events",
-            "pages": [
-              "events/overview",
-              "events/create-event",
-              "events/calendars",
-              "events/invite-members",
-              "events/rsvp",
-              "events/attendance",
-              "events/event-payments",
-              "events/reminders",
-              "events/public-event-page",
-              "events/ical",
-              "events/troubleshooting"
-            ]
-          },
-          {
-            "group": "Emails",
-            "pages": [
-              "emails/overview",
-              "emails/templates",
-              "emails/drafts",
-              "emails/sending",
-              "emails/campaigns",
-              "emails/variables",
-              "emails/recipients",
-              "emails/tracking",
-              "emails/troubleshooting"
-            ]
-          },
-          {
-            "group": "Website",
-            "pages": [
-              "website/overview",
-              "website/pages",
-              "website/page-editor",
-              "website/publishing",
-              "website/slugs-and-urls",
-              "website/layout-pages",
-              "website/analytics",
-              "website/custom-domain",
-              "website/troubleshooting"
-            ]
-          },
-          {
-            "group": "Dues",
-            "pages": [
-              "dues/overview",
-              "dues/dues-groups",
-              "dues/assigning-dues",
-              "dues/due-dates",
-              "dues/pay-link",
-              "dues/waiving-and-cancelling",
-              "dues/ledger",
-              "dues/troubleshooting"
-            ]
-          },
-          {
-            "group": "Merch",
-            "pages": [
-              "merch/overview",
-              "merch/create-merch-group",
-              "merch/products-and-variants",
-              "merch/storefront",
-              "merch/cart-and-checkout",
-              "merch/merch-editor",
-              "merch/troubleshooting"
-            ]
-          },
-          {
-            "group": "Finance",
-            "pages": [
-              "finance/overview",
-              "finance/transactions",
-              "finance/payouts",
-              "finance/balance-cards",
-              "finance/processing-fees",
-              "finance/troubleshooting"
-            ]
-          },
-          {
-            "group": "Settings",
-            "pages": [
-              "settings/overview",
-              "settings/club-settings",
-              "settings/subscription",
-              "settings/stripe-connect",
-              "settings/join-code-and-invite",
-              "settings/instant-payouts",
-              "settings/troubleshooting"
+              {
+                "group": "Account and organization",
+                "expanded": false,
+                "pages": [
+                  "getting-started/sign-up",
+                  "getting-started/log-in",
+                  "getting-started/create-organization",
+                  "getting-started/join-organization",
+                  "getting-started/onboarding",
+                  "getting-started/stripe-connect",
+                  "getting-started/bank-details",
+                  "getting-started/user-preferences",
+                  "getting-started/switching-clubs",
+                  "getting-started/troubleshooting"
+                ]
+              },
+              {
+                "group": "Members",
+                "expanded": false,
+                "pages": [
+                  "members/overview",
+                  "members/add-members",
+                  "members/csv-upload",
+                  "members/custom-columns",
+                  "members/roles-and-permissions",
+                  "members/edit-and-remove",
+                  "members/profile-pictures",
+                  "members/filters-and-search",
+                  "members/public-join",
+                  "members/troubleshooting"
+                ]
+              },
+              {
+                "group": "Groups",
+                "expanded": false,
+                "pages": [
+                  "groups/overview",
+                  "groups/create-groups",
+                  "groups/assign-members",
+                  "groups/using-groups-in-emails",
+                  "groups/using-groups-for-events",
+                  "groups/troubleshooting"
+                ]
+              },
+              {
+                "group": "Events",
+                "expanded": false,
+                "pages": [
+                  "events/overview",
+                  "events/create-event",
+                  "events/calendars",
+                  "events/invite-members",
+                  "events/rsvp",
+                  "events/attendance",
+                  "events/event-payments",
+                  "events/reminders",
+                  "events/public-event-page",
+                  "events/ical",
+                  "events/troubleshooting"
+                ]
+              },
+              {
+                "group": "Emails",
+                "expanded": false,
+                "pages": [
+                  "emails/overview",
+                  "emails/templates",
+                  "emails/drafts",
+                  "emails/sending",
+                  "emails/campaigns",
+                  "emails/variables",
+                  "emails/recipients",
+                  "emails/tracking",
+                  "emails/troubleshooting"
+                ]
+              },
+              {
+                "group": "Website",
+                "expanded": false,
+                "pages": [
+                  "website/overview",
+                  "website/pages",
+                  "website/page-editor",
+                  "website/publishing",
+                  "website/slugs-and-urls",
+                  "website/layout-pages",
+                  "website/analytics",
+                  "website/custom-domain",
+                  "website/troubleshooting"
+                ]
+              },
+              {
+                "group": "Dues",
+                "expanded": false,
+                "pages": [
+                  "dues/overview",
+                  "dues/dues-groups",
+                  "dues/assigning-dues",
+                  "dues/due-dates",
+                  "dues/pay-link",
+                  "dues/waiving-and-cancelling",
+                  "dues/ledger",
+                  "dues/troubleshooting"
+                ]
+              },
+              {
+                "group": "Merch",
+                "expanded": false,
+                "pages": [
+                  "merch/overview",
+                  "merch/create-merch-group",
+                  "merch/products-and-variants",
+                  "merch/storefront",
+                  "merch/cart-and-checkout",
+                  "merch/merch-editor",
+                  "merch/troubleshooting"
+                ]
+              },
+              {
+                "group": "Finance",
+                "expanded": false,
+                "pages": [
+                  "finance/overview",
+                  "finance/transactions",
+                  "finance/payouts",
+                  "finance/balance-cards",
+                  "finance/processing-fees",
+                  "finance/troubleshooting"
+                ]
+              },
+              {
+                "group": "Settings",
+                "expanded": false,
+                "pages": [
+                  "settings/overview",
+                  "settings/club-settings",
+                  "settings/subscription",
+                  "settings/stripe-connect",
+                  "settings/join-code-and-invite",
+                  "settings/instant-payouts",
+                  "settings/troubleshooting"
+                ]
+              }
             ]
           },
           {
@@ -186,12 +200,7 @@
         "label": "Support",
         "href": "mailto:support@rowhouse.co"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://rowhouse.co"
-    }
+    ]
   },
   "contextual": {
     "options": [
