@@ -1,0 +1,67 @@
+---
+title: "Glossary"
+description: "Definitions for club, membership, dues group, ledger, and more"
+icon: "book"
+---
+
+Definitions of terms used in Rowhouse docs and product.
+
+**Admin**  
+A member with the **admin** role. Admins can manage the organization: members, groups, events, emails, website, dues, merch, settings, and subscription. Only admins see Settings and Subscription in the sidebar.
+
+**Assignment (dues)**  
+A single dues obligation: one member, one amount, optional due date and description. Each assignment has a status (unpaid/paid) and a unique **pay link**.
+
+**Calendar**  
+A named group of events (e.g. "Social events"). Events can be assigned to a calendar. Calendar members may be default invitees for events on that calendar.
+
+**Club**  
+Your **organization** in Rowhouse (e.g. a club, chapter, or team). The club has a name, slug, logo, members, events, dues, and settings. Used interchangeably with "organization" in the docs.
+
+**Draft (email)**  
+An email prepared for sending, built from a **template** with optional custom variables. You choose recipients and send from the draft.
+
+**Dues group**  
+A named set of dues (or merch) with optional **options** (tiers/variants) and block-based content. Type "dues" for dues; type "merch" for the store. Used when assigning dues or selling products so the pay/store page can show the right amount and content.
+
+**Event invite**  
+A record linking one **member** to one **event**: RSVP status, attendance, and (for paid events) payment status and amount. Invitees receive an email with a link to RSVP and pay.
+
+**Group**  
+A label or tag for members (e.g. "Board", "Class of 2026"). Members can belong to multiple groups. Groups are used to send emails or invite to events by group.
+
+**Ledger**  
+A record of financial activity: payments (dues, events, merch) and sometimes payouts. Used for balance and audit.
+
+**Member / membership**  
+One person's association with one **club**. A member has name, email, phone, role (admin or member), optional profile picture and custom column values, and can belong to **groups**.
+
+**Merch group**  
+A **dues group** with type "merch": defines a product with custom properties (e.g. size, color) and **options** (variants with prices). Powers the **storefront** and cart/checkout.
+
+**Option (dues group)**  
+A selectable tier or variant in a dues group: label and amount. For dues, options are tiers (e.g. "Standard $50"). For merch, options are product variants (e.g. "M / Blue" at $25).
+
+**Organization**  
+Same as **club**: the entity you create or join (name, slug, members, events, dues, settings).
+
+**Pay link**  
+The unique URL for a dues (or event) assignment that the member opens to pay. Sharing the pay link is how you collect payment from that member.
+
+**Payout**  
+A transfer of funds from Stripe to your connected bank account. Payouts follow Stripe's schedule (e.g. rolling or weekly).
+
+**Slug**  
+A URL-friendly identifier (lowercase, letters, numbers, hyphens). Used for the **club** (e.g. `my-club` in `rowhouse.co/my-club`) and for **pages**, **dues groups**, and **merch groups**.
+
+**Storefront**  
+The public store page where customers browse merch, select variants, and add items to the cart. Reached via the store URL (e.g. `rowhouse.co/store/org-slug`).
+
+**Template (email)**  
+A reusable email design (subject and body) with variables (e.g. `{{name}}`). You create **drafts** from templates and send to recipients.
+
+**Transaction**  
+A single payment record: who paid, amount, type (dues/event/merch), date. Viewed in Finance → Transactions.
+
+**Variable (email)**  
+A placeholder in a template or draft (e.g. `{{name}}`, `{{email}}`) that is replaced per recipient when sending. Custom variables are set per draft.

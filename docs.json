@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Rowhouse",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -22,47 +22,145 @@
             ]
           },
           {
-            "group": "Customization",
+            "group": "Account and organization",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "getting-started/sign-up",
+              "getting-started/log-in",
+              "getting-started/create-organization",
+              "getting-started/join-organization",
+              "getting-started/onboarding",
+              "getting-started/stripe-connect",
+              "getting-started/bank-details",
+              "getting-started/user-preferences",
+              "getting-started/switching-clubs",
+              "getting-started/troubleshooting"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Members",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "members/overview",
+              "members/add-members",
+              "members/csv-upload",
+              "members/custom-columns",
+              "members/roles-and-permissions",
+              "members/edit-and-remove",
+              "members/profile-pictures",
+              "members/filters-and-search",
+              "members/public-join",
+              "members/troubleshooting"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Groups",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "groups/overview",
+              "groups/create-groups",
+              "groups/assign-members",
+              "groups/using-groups-in-emails",
+              "groups/using-groups-for-events",
+              "groups/troubleshooting"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Events",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "events/overview",
+              "events/create-event",
+              "events/calendars",
+              "events/invite-members",
+              "events/rsvp",
+              "events/attendance",
+              "events/event-payments",
+              "events/reminders",
+              "events/public-event-page",
+              "events/ical",
+              "events/troubleshooting"
+            ]
+          },
+          {
+            "group": "Emails",
+            "pages": [
+              "emails/overview",
+              "emails/templates",
+              "emails/drafts",
+              "emails/sending",
+              "emails/campaigns",
+              "emails/variables",
+              "emails/recipients",
+              "emails/tracking",
+              "emails/troubleshooting"
+            ]
+          },
+          {
+            "group": "Website",
+            "pages": [
+              "website/overview",
+              "website/pages",
+              "website/page-editor",
+              "website/publishing",
+              "website/slugs-and-urls",
+              "website/layout-pages",
+              "website/analytics",
+              "website/custom-domain",
+              "website/troubleshooting"
+            ]
+          },
+          {
+            "group": "Dues",
+            "pages": [
+              "dues/overview",
+              "dues/dues-groups",
+              "dues/assigning-dues",
+              "dues/due-dates",
+              "dues/pay-link",
+              "dues/waiving-and-cancelling",
+              "dues/ledger",
+              "dues/troubleshooting"
+            ]
+          },
+          {
+            "group": "Merch",
+            "pages": [
+              "merch/overview",
+              "merch/create-merch-group",
+              "merch/products-and-variants",
+              "merch/storefront",
+              "merch/cart-and-checkout",
+              "merch/merch-editor",
+              "merch/troubleshooting"
+            ]
+          },
+          {
+            "group": "Finance",
+            "pages": [
+              "finance/overview",
+              "finance/transactions",
+              "finance/payouts",
+              "finance/balance-cards",
+              "finance/processing-fees",
+              "finance/troubleshooting"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "settings/overview",
+              "settings/club-settings",
+              "settings/subscription",
+              "settings/stripe-connect",
+              "settings/join-code-and-invite",
+              "settings/instant-payouts",
+              "settings/troubleshooting"
+            ]
+          },
+          {
+            "group": "Guides and reference",
+            "pages": [
+              "guides/plan-limits",
+              "guides/glossary",
+              "guides/common-issues",
+              "guides/best-practices"
             ]
           }
         ]
@@ -72,13 +170,8 @@
       "anchors": [
         {
           "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "href": "https://rowhouse.co",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
         }
       ]
     }
@@ -91,32 +184,24 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@rowhouse.co"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://rowhouse.co"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude"
+    ]
   },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    "socials": {}
   }
 }

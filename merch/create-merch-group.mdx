@@ -1,0 +1,24 @@
+---
+title: "Create merch group"
+description: "Create a merch dues group with custom properties and options"
+icon: "plus"
+---
+
+A **merch group** is a [dues group](/dues/dues-groups) with type **merch**. It has a name, slug, **custom properties** (e.g. size, color), and **options** (product variants with prices).
+
+## Create a merch group
+
+1. Go to **Finance** → **Merch** and click **Create merch group** (or **New group**).
+2. Enter **name** (e.g. "Club T-Shirt 2025") and **slug** (e.g. `club-tshirt-2025`). Slug must be unique and is used in the [storefront](/merch/storefront) URL.
+3. Set **type** to **merch**.
+4. **Custom properties**: Add properties that the customer chooses (e.g. **Size**: options S, M, L, XL; **Color**: Blue, Green). These become dropdowns or buttons on the product page. Add as many as you need (size, color, style, etc.).
+5. **Options** (variants): Add one row per variant with **label** (e.g. "M / Blue") and **amount** (price). You can use **metadata** (e.g. `{"size":"M","color":"Blue"}) to map the option to the custom property choices for inventory or display. See [Products and variants](/merch/products-and-variants).
+6. Optionally add **content** (blocks) for the product/store page. Save.
+
+<Tip>
+Use clear option labels (e.g. "Small - Blue") so customers know what they are buying. Keep custom property option names short (e.g. "S", "M", "L") so the storefront stays clean.
+</Tip>
+
+## After creating
+
+- The group appears in Merch. Share the [storefront](/merch/storefront) link (e.g. `rowhouse.co/store/your-org-slug` or the group slug) so customers can browse and [check out](/merch/cart-and-checkout).

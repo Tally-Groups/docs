@@ -1,0 +1,36 @@
+---
+title: "Dues troubleshooting"
+description: "Fix pay link, payment not reflecting, and duplicate charges"
+icon: "wrench"
+---
+
+Common issues with dues assignments and payments.
+
+## Pay link broken or not loading
+
+- **Assignment exists**: Confirm the assignment was not [cancelled](/dues/waiving-and-cancelling) or deleted. If it was, create a new assignment and share the new pay link.
+- **Already paid**: If the member already paid, the link may show "already paid" or redirect to success. Check the Dues list; if status is **paid**, no further action is needed.
+- **URL**: Ensure you copied the full link (e.g. `https://rowhouse.co/dues/[id]/pay`). Missing protocol or truncated URL can cause errors. Have the member try again in a different browser or device.
+- **Stripe**: Payments require [Stripe Connect](/getting-started/stripe-connect) to be complete. If Connect is incomplete, pay links may fail. Complete onboarding and try again.
+
+## Payment not reflecting (still shows unpaid)
+
+- **Wait**: After the member pays, status can take a few seconds to update. Refresh the Dues list or open the assignment again.
+- **Webhook**: Rowhouse updates status when Stripe sends a successful payment webhook. If Stripe had an outage or the webhook failed, status might be delayed. Check **Finance** → **Transactions** to see if the payment appears there; if it does, the assignment may sync later or support can fix the status.
+- **Wrong assignment**: Confirm the member used the link for *this* assignment. If they paid a different assignment or an event, that payment will not mark this dues assignment as paid.
+
+## Duplicate charges
+
+- **Member paid twice**: If the member clicked Pay twice or used the link twice, they might have been charged twice. Check **Transactions** for two payments for the same amount and same member around the same time. Refunds must be done in Stripe (or your process); then you can [waive](/dues/waiving-and-cancelling) or cancel one of the assignments so records match.
+- **Duplicate assignments**: If you accidentally created two assignments for the same member and same dues, waive or cancel one and share only one pay link going forward.
+
+## Member cannot pay (card declined, error)
+
+- **Card**: The member should try a different card or contact their bank. Rowhouse does not control card declines.
+- **Amount**: Ensure the amount is correct and in the expected currency. Very small or zero amounts may be rejected by Stripe.
+- **Browser**: Try another browser or device; clear cache and disable extensions that might block Stripe.
+
+## Plan and access
+
+- **Dues section locked**: Finance/Dues may require a **paid plan**. See [Subscription](/settings/subscription) and [Plan limits](/guides/plan-limits). Upgrade to unlock.
+- **No pay link**: Only admins (or users with permission) can see and copy pay links. If you are a member, ask an admin to send you the link.

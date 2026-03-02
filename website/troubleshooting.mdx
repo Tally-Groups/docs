@@ -1,0 +1,38 @@
+---
+title: "Website troubleshooting"
+description: "Fix page not showing, slug conflict, and editor issues"
+icon: "wrench"
+---
+
+Common issues with pages and the website.
+
+## Page not showing on the public site
+
+- **Publish**: Only **published** pages are visible. In the [page editor](/website/page-editor), set **Status** to **Published** and save. See [Publishing](/website/publishing).
+- **Correct URL**: Confirm you are opening the right URL. It is usually `rowhouse.co/your-org-slug/your-page-slug`. Check [Slugs and URLs](/website/slugs-and-urls).
+- **Org**: Ensure you are in the correct **organization** (club switcher). Each org has its own pages and slug namespace.
+- **Cache**: Try a hard refresh (Ctrl+F5 or Cmd+Shift+R) or another browser/device. If you just published, wait a minute and try again.
+
+## Slug conflict or duplicate slug error
+
+- **Uniqueness**: Two pages in the same org cannot share the same slug. Rename one page's slug (e.g. `about` → `about-us`) or delete the other page. See [Slugs and URLs](/website/slugs-and-urls).
+- **Reserved**: Some slugs may be reserved (e.g. `home`, `login`). Choose a different slug.
+
+## Page editor not loading or save fails
+
+- **Browser**: Use a supported, up-to-date browser (Chrome, Firefox, Safari, Edge). Disable extensions that might block scripts (e.g. ad blockers) and try again.
+- **Network**: Save can fail if the connection drops. Copy your content elsewhere, refresh, and try saving again.
+- **Permissions**: You must be an **admin** to create or edit website pages. If you are a member, you will not see the editor or save may be denied.
+- **Size**: Very large pages (many blocks or huge images) may be slow or time out. Simplify the page or reduce image sizes and try again.
+
+## Custom domain not working
+
+- **DNS**: Verify the **CNAME** (or A) record at your DNS provider matches exactly what Rowhouse specifies. Propagation can take up to 48 hours. Use a DNS lookup tool to confirm the record.
+- **SSL**: HTTPS may take a few minutes after DNS is correct. If the domain loads over HTTP but not HTTPS, wait and try again or contact support.
+- **Plan**: Custom domain may require a specific plan. See [Plan limits](/guides/plan-limits) and [Subscription](/settings/subscription).
+
+## Analytics missing or zero
+
+- **Plan**: Analytics may be a paid feature. Confirm your plan includes website analytics.
+- **Published pages**: Only traffic to **published** pages is typically counted. Draft pages are not public.
+- **Time range**: Switch the date range (e.g. last 30 days) to see if there is data in another period.

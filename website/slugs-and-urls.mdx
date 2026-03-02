@@ -1,0 +1,27 @@
+---
+title: "Slugs and URLs"
+description: "How page slugs and public URLs work"
+icon: "link"
+---
+
+Each page has a **slug**: the URL path segment used in the public URL. Slugs must be **unique** per organization.
+
+## What is a slug?
+
+- The **slug** is the part after your org's base URL. Example: for slug `about`, the full URL might be `rowhouse.co/my-club/about` (where `my-club` is your org slug).
+- Use **lowercase** letters, numbers, and hyphens. Avoid spaces and special characters. Good: `about`, `meet-the-team`, `2025-events`. Bad: `About Us`, `meet the team`.
+
+## Uniqueness
+
+- Two pages in the **same organization** cannot share the same slug. If you try to save a duplicate slug, you will get an error. Choose a different slug (e.g. `about-us` and `about-the-club`) or delete/merge the other page.
+- Slugs are usually **editable** until the page is published; some setups may allow changing the slug after publish (the old URL may redirect or 404).
+
+## Reserved or special slugs
+
+- Your site may reserve certain slugs (e.g. `home` for the homepage, or empty slug ``). Check existing pages and any docs for your theme/site to avoid conflicts.
+- Do not use slugs that conflict with app routes (e.g. `dashboard`, `login`) if they are reserved.
+
+## Changing a slug
+
+- If you change a page's slug, the **old URL** will no longer show that page (404 or redirect, depending on setup). Update any links (navigation, emails, social) to the new URL.
+- Save the page after changing the slug so the new URL is in effect.

@@ -1,0 +1,29 @@
+---
+title: "Products and variants"
+description: "Set up options (variants) and prices for merch"
+icon: "tags"
+---
+
+In a merch group, **options** are your product **variants**: each option has a **label** and **amount** (price). Custom properties (size, color) define what the customer picks; options map to those choices (e.g. "M / Blue" = $25).
+
+## Options (variants)
+
+- Each **option** has:
+  - **Label**: Display name (e.g. "Medium - Blue", "Large - Green").
+  - **Amount**: Price in dollars (or cents, depending on the app).
+  - **Sort order**: Order shown in the list.
+  - **Metadata** (optional): e.g. `{"size":"M","color":"Blue"}` so the storefront can map the option to the selected size/color and show the right price.
+- Create one option per variant (e.g. S Blue, S Green, M Blue, M Green, ...) or one per size if you only have one color.
+
+## Custom properties and mapping
+
+- **Custom properties** (e.g. Size, Color) define the dropdowns on the product page. When the customer selects "M" and "Blue", the app finds the option that matches (e.g. metadata `size: M, color: Blue`) and uses that option's **amount** at checkout.
+- If you have a single product with no variants, you can create one option with one price and no or minimal custom properties.
+
+<Tip>
+Keep variant names consistent (e.g. "M" not "Medium" in metadata if your property options are "M") so the storefront can match correctly.
+</Tip>
+
+## Inventory (if supported)
+
+- Some setups support **inventory** per variant (e.g. quantity). If available, set quantities so the storefront can show "Out of stock" and prevent over-selling. When not supported, you manage stock offline and remove or disable options when sold out.

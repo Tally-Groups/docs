@@ -1,0 +1,36 @@
+---
+title: "Dues groups"
+description: "Create dues groups with options and block content for the pay page"
+icon: "layer-group"
+---
+
+A **dues group** (type "dues") is a named set of dues options and optional block-based content. You use it when [assigning dues](/dues/assigning-dues) so members see a clear label and the right amount (and a custom pay page if you add content).
+
+## What is a dues group?
+
+- **Name** and **slug**: e.g. "Fall 2025 Dues", slug `fall-2025-dues`. The slug is used in URLs (e.g. pay page or store).
+- **Type**: "dues" (for dues; "merch" is for [merch](/merch/overview)).
+- **Default amount**: Optional default (e.g. $50) used when you assign without picking an option.
+- **Options**: [Dues group options](/dues/assigning-dues) (e.g. "Standard - $50", "Early bird - $40"). When assigning, you can pick an option so the member gets that amount.
+- **Content**: Optional block-based (Puck) content shown on the pay or info page for this group.
+
+## Create a dues group
+
+1. Go to **Finance** → **Dues** (or **Dues groups**) and click **Create dues group** (or **New group**).
+2. Enter **name** and **slug** (lowercase, letters, numbers, hyphens). Slug must be unique per org.
+3. Set **type** to **dues**.
+4. Optionally set **default amount** and add **options** (label + amount per option).
+5. Optionally add **content** (blocks) for the pay page. Save.
+
+<Tip>
+Use one dues group per "campaign" (e.g. semester or year) so you can filter and report by group. Options can represent tiers (e.g. early bird vs standard).
+</Tip>
+
+## When assigning dues
+
+- When you [assign dues](/dues/assigning-dues), you can optionally select a **dues group** and an **option**. The member's assignment is linked to that group/option and the amount comes from the option (or default). The member may see the group name and content on their pay page.
+
+## Edit or delete
+
+- **Edit**: Change name, slug, default amount, options, or content. Existing assignments keep their amount; new assignments use the updated data.
+- **Delete**: Deleting a dues group may unlink it from assignments (assignments keep their amount but no longer reference the group). Check the app before deleting; you may not be able to delete if assignments exist.

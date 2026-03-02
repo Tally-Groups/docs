@@ -1,0 +1,35 @@
+---
+title: "Calendars"
+description: "Organize events with calendars and default invitees"
+icon: "calendar-days"
+---
+
+**Calendars** let you group events (e.g. "Social events", "Meetings") and optionally define a set of **calendar members** who are default invitees for events on that calendar.
+
+## What is a calendar?
+
+A **calendar** belongs to your organization and has:
+
+- **Name** (e.g. "Social events")
+- Optional **description**
+- **Calendar members**: members who are automatically considered invitees for events assigned to this calendar (depending on app behavior)
+- **Events**: events can be assigned to one calendar
+
+## Create a calendar
+
+1. Go to **Events** (or **Calendars** if listed separately) and open calendar settings or the calendar list.
+2. Click **Create calendar** (or **Add calendar**).
+3. Enter **name** and optional **description**, then save.
+4. Add **calendar members** so they are the default invitees for events on this calendar (if the app supports it).
+
+## Assign events to a calendar
+
+- When [creating](/events/create-event) or editing an event, select a **Calendar** from the dropdown. The event is then grouped under that calendar and may automatically include the calendar's members as invitees (depending on implementation).
+
+## iCal feed
+
+- You can expose an [iCal feed](/events/ical) per calendar or per org so members can subscribe in Google Calendar, Apple Calendar, etc.
+
+<Note>
+Exact behavior (e.g. whether calendar members are auto-invited to new events on that calendar) may vary. Check the event invite step after assigning a calendar to confirm who is invited.
+</Note>

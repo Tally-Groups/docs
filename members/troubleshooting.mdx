@@ -1,0 +1,56 @@
+---
+title: "Members troubleshooting"
+description: "Fix import failures, duplicates, missing columns, and permissions"
+icon: "wrench"
+---
+
+Common issues when adding, editing, or importing members.
+
+## CSV import
+
+### Import fails or shows errors
+
+- **Column mapping**: Ensure the first row of your CSV has headers and that you've mapped **email** (and name fields) correctly. See [CSV upload](/members/csv-upload).
+- **File format**: Save as **CSV** (comma-separated), not Excel. Use UTF-8 if you have special characters.
+- **File size**: Very large files (e.g. 5,000+ rows) may time out. Split into smaller files (e.g. 1,000–2,000 rows) and import in batches.
+- **Custom columns**: If you're importing custom column values, the header names must **exactly match** the custom column names in Rowhouse (case-sensitive). Create the custom columns first, then import.
+
+### Duplicate members after import
+
+- During import, use the **duplicate handling** option: **Skip** or **Update** existing members by email instead of creating duplicates.
+- If you already have duplicates: search by email, then [edit](/members/edit-and-remove) one record and **remove** the duplicate member, or merge data manually and remove the extra.
+
+### Some rows didn't import
+
+- Check the summary or error report after import (if shown). Common causes: invalid email format, required field missing, or duplicate email with "skip" selected. Fix the CSV and re-import the failed rows in a new file if needed.
+
+## Custom columns
+
+### Custom column not showing in CSV mapping
+
+- The CSV header must **exactly match** the custom column name (spelling and case). Create the [custom column](/members/custom-columns) in Rowhouse first, then use the same name in the CSV.
+
+### Values not saving or showing
+
+- Ensure the **data type** matches (e.g. number column for years, date for dates). Invalid values may be ignored or show as blank.
+
+## Permissions
+
+### I can't edit a member / I don't see Edit
+
+- You must be an **admin** to edit other members or change roles. See [Roles and permissions](/members/roles-and-permissions). Ask an admin to promote you or to make the edit.
+
+### I don't see the Members page
+
+- Confirm you're in the correct **organization** (club switcher). If you're a **member** (not admin), your org may restrict which pages you can see; admins always have access to Members.
+
+## Profile picture
+
+### Upload fails or picture doesn't show
+
+- Use a supported format (e.g. JPG, PNG) and a reasonable size (e.g. under 2 MB). Try a smaller or different image. If the problem continues, try another browser or clear cache.
+
+## Still stuck?
+
+- [Getting started troubleshooting](/getting-started/troubleshooting) for sign-up, login, and onboarding.
+- [Dues troubleshooting](/dues/troubleshooting) or [Events](/events/troubleshooting) if the issue is with paying or RSVPing.

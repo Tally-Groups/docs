@@ -1,0 +1,31 @@
+---
+title: "Cart and checkout"
+description: "How customers add items and pay (Stripe)"
+icon: "cart-shopping"
+---
+
+Customers **add items** to the cart from the [storefront](/merch/storefront), then complete **checkout** with card payment (Stripe). You see orders in **Transactions** and receive funds per your [payout](/finance/payouts) schedule.
+
+## Cart
+
+- On the product page, the customer selects **variant** (e.g. size, color) and clicks **Add to cart**. The item (with variant and price) is added to the cart. They can continue shopping or go to checkout.
+- Cart is usually stored in the browser (session or cookie) until they complete checkout or leave. Cart contents may be shown in a sidebar or cart icon with quantity.
+
+## Checkout
+
+1. The customer clicks **Checkout** (or **View cart** then **Checkout**).
+2. They may be asked for **name**, **email**, **phone** (and optionally address) for the order. If they are already a member, some info may be pre-filled.
+3. They enter **payment** (card) on the secure Stripe checkout page. Rowhouse sends the order and payment to Stripe; your org receives the amount minus [processing fees](/finance/processing-fees).
+4. After success, they see a **confirmation** (and may receive an email if configured). The order appears in your **Transactions** (and possibly a dedicated Orders view if the app has one).
+
+<Note>
+Rowhouse does not typically handle shipping or inventory fulfillment; you fulfill orders offline. Use transaction or order details (customer, items, variant) to ship and track.
+</Note>
+
+## Multiple items
+
+- Customers can add multiple items (same or different products) to the cart and pay once at checkout. The total is the sum of each item's price (per variant).
+
+## Failed payment
+
+- If the card is declined or payment fails, the customer sees an error and can try again or use another card. No order is created until payment succeeds. See [Merch troubleshooting](/merch/troubleshooting) for store or checkout errors.

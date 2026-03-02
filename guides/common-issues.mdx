@@ -1,0 +1,50 @@
+---
+title: "Common issues"
+description: "Cross-feature fixes: member cannot pay, email not received, event not showing"
+icon: "circle-question"
+---
+
+Quick pointers for issues that span multiple features.
+
+## Member cannot pay (dues or event)
+
+- **Pay link**: Ensure they use the **link from their invite or dues email**, not a generic event or org page. Each assignment has its own pay link.
+- **Stripe**: Your org must have [Stripe Connect](/getting-started/stripe-connect) complete. If Connect is incomplete, all pay links will fail.
+- **Card**: They should try another card or contact their bank. Rowhouse does not control card declines.
+- **Already paid**: If the assignment is already marked paid, the link may show "already paid". Check [Dues](/dues/overview) or the event's invite list for status.
+
+See [Dues troubleshooting](/dues/troubleshooting) and [Events troubleshooting](/events/troubleshooting).
+
+## Email not received
+
+- **Spam**: Ask the recipient to check spam and promotions and to add the sender to contacts.
+- **Address**: Confirm the member's **email** in [Members](/members/edit-and-remove) is correct. Resend the email or pay link after fixing.
+- **Send**: For bulk emails, ensure you clicked **Send** and chose [recipients](/emails/recipients). Check [Campaigns](/emails/campaigns) for status (sent vs failed).
+- **Plan**: Emails may require a [paid plan](/guides/plan-limits). Upgrade if the Emails section is locked.
+
+See [Emails troubleshooting](/emails/troubleshooting).
+
+## Event not showing or wrong list
+
+- **Org**: Confirm you are in the correct **organization** (club switcher). Events are per org.
+- **Calendar**: If you use [calendars](/events/calendars), filter by calendar or "All" to see the event.
+- **Past vs upcoming**: Switch the list to **Upcoming** or **Past** (if the UI has that filter).
+- **Public page**: For the **public** event page to show, the event must exist and (if applicable) be published. Share the correct URL from the event's "View public page" or share link.
+
+See [Events troubleshooting](/events/troubleshooting).
+
+## Cannot access a feature (locked)
+
+- **Plan**: Many features (emails, website, dues, merch, analytics) require a [paid plan](/guides/plan-limits). Upgrade in [Subscription](/settings/subscription).
+- **Role**: Only **admins** can access Settings, Subscription, and some other areas. See [Roles and permissions](/members/roles-and-permissions). Ask an admin to promote you or to perform the action.
+- **Stripe**: Payment-related features (dues, events with payment, merch) require [Stripe Connect](/getting-started/stripe-connect) to be complete.
+
+## Payment or payout delayed
+
+- **Transaction**: Payments usually appear in [Transactions](/finance/transactions) within seconds. If not, refresh and check [Finance troubleshooting](/finance/troubleshooting).
+- **Payout**: [Payouts](/finance/payouts) follow Stripe's schedule (e.g. 2 business days or weekly). First payouts can take longer. See [Payouts](/finance/payouts) and [Finance troubleshooting](/finance/troubleshooting).
+
+## More help
+
+- Use the **Support** or **Contact** link in the app or docs footer.
+- Check the **troubleshooting** page for each feature: [Getting started](/getting-started/troubleshooting), [Members](/members/troubleshooting), [Events](/events/troubleshooting), [Emails](/emails/troubleshooting), [Dues](/dues/troubleshooting), [Website](/website/troubleshooting), [Finance](/finance/troubleshooting), [Settings](/settings/troubleshooting).

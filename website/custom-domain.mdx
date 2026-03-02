@@ -1,0 +1,31 @@
+---
+title: "Custom domain"
+description: "Point your own domain to your Rowhouse site"
+icon: "globe"
+---
+
+A **custom domain** lets your organization's website be served at your own URL (e.g. `www.myclub.com`) instead of `rowhouse.co/your-org-slug`.
+
+## Is custom domain supported?
+
+- Custom domain is an optional feature. Your org may have a **custom domain** field in [Club settings](/settings/club-settings) or under Website. If you do not see it, the feature may not be available for your plan or instance. See [Plan limits](/guides/plan-limits).
+
+## How it works
+
+1. In **Settings** (or **Website**), find **Custom domain** (or **Domain**).
+2. Enter your domain (e.g. `www.myclub.com` or `myclub.com`). Save.
+3. Rowhouse may show **DNS instructions**: add a **CNAME** (or A) record at your DNS provider pointing to the value Rowhouse gives (e.g. `rowhouse.co` or a proxy hostname).
+4. After DNS propagates (minutes to 48 hours), Rowhouse may automatically provision SSL (HTTPS) for your domain. Your site will then be reachable at your custom domain.
+
+<Warning>
+DNS must be correct for the custom domain to work. Use the exact hostname and target Rowhouse provides. Wrong CNAME/A records can break email or other services on the same domain; if unsure, ask your DNS host or support.
+</Warning>
+
+## Subdomains vs root domain
+
+- **www**: Often you point `www.myclub.com` (CNAME to Rowhouse). Then `www.myclub.com` serves your site.
+- **Root** (`myclub.com`): Some setups support the root domain; that may require an **A** record or CNAME flattening. Follow Rowhouse's instructions for root domain if offered.
+
+## After setup
+
+- Share your custom URL (e.g. `https://www.myclub.com`) instead of the Rowhouse subdomain URL. Existing links to `rowhouse.co/your-org` may still work if redirects are configured; check with support.

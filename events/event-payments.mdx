@@ -1,0 +1,36 @@
+---
+title: "Event payments"
+description: "Paid events: assign amount, waive, and member pay link"
+icon: "dollar-sign"
+---
+
+For **paid events**, you set an amount (and optionally per-invitee amounts), and invitees pay via a secure link. You can **waive** the fee for specific people.
+
+## Set the event amount
+
+- When [creating the event](/events/create-event), set **Amount** (e.g. $10). This is the default charge per invitee. Currency is usually USD unless your org uses another.
+
+## Per-invitee amount and waive
+
+- When you [add invitees](/events/invite-members), you can often:
+  - **Use default amount**: Each invitee sees the event amount.
+  - **Custom amount**: Override for one person (e.g. $5 for a guest).
+  - **Waive**: Set amount to $0 for that invitee so they do not need to pay (e.g. speaker, volunteer).
+- Waived invitees can still RSVP and are marked as paid/waived in the event.
+
+## How invitees pay
+
+1. They receive the **event invite email** and click the link.
+2. They see event details and, if they have a balance, a **Pay** button or payment step.
+3. They enter payment details (card) on the secure payment page (Stripe). After success, they are marked **paid** and their RSVP is confirmed.
+4. Payment page: typically `rowhouse.co/events/[eventId]/pay` (or similar). Do not share this URL broadly; invitees get it via their personal invite link.
+
+<Note>
+Processing fees may apply (see [Processing fees](/finance/processing-fees)). The member pays the event amount plus any fee; your org receives the event amount minus fees and Stripe's share.
+</Note>
+
+## View payment status
+
+- In the event's **Invitees** list, you see who has **Paid**, who is **Waived**, and who is **Unpaid**. You can resend the pay link or waive from there (if the UI allows).
+
+See [Troubleshooting](/events/troubleshooting) for payment failed or pay link broken.

@@ -1,0 +1,29 @@
+---
+title: "Email templates"
+description: "Create and edit reusable email templates with the Puck or MJML editor"
+icon: "file-lines"
+---
+
+**Templates** are reusable email designs. You set a **subject** and **body** (with [variables](/emails/variables)) and reuse them in [drafts](/emails/drafts) for sending.
+
+## Create a template
+
+1. Go to **Emails** → **Templates** and click **Create template** (or **New template**).
+2. Enter a **name** (for your reference, e.g. "Monthly newsletter").
+3. Set the **subject** line. Use variables like `{{name}}` or `{{email}}` so each recipient gets a personalized subject. See [Variables](/emails/variables).
+4. Build the **body**:
+   - **Puck editor**: Drag-and-drop blocks (text, images, buttons) and style them. Same concept as the [website page editor](/website/page-editor).
+   - **MJML**: If your app supports it, you can write or paste MJML; it is converted to HTML for sending.
+5. Save. The template appears in the Templates list and can be used to create [drafts](/emails/drafts).
+
+<Tip>
+Keep the subject short and clear. Test with a small recipient list first to ensure variables and links work.
+</Tip>
+
+## Edit a template
+
+- Open the template from **Templates**, change subject or body, and save. Existing [drafts](/emails/drafts) that were created from this template may keep their own copy of content until you update the draft; new drafts will use the updated template.
+
+## Variables in templates
+
+- Use `{{name}}`, `{{email}}`, and custom variables (e.g. `{{event_date}}`) in both **subject** and **body**. They are replaced per recipient when sending. See [Variables](/emails/variables).

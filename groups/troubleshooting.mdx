@@ -1,0 +1,45 @@
+---
+title: "Groups troubleshooting"
+description: "Fix missing groups, wrong members, and dropdown issues"
+icon: "wrench"
+---
+
+Common issues when using groups.
+
+## Member not in group / Group missing in dropdown
+
+### I added a member to a group but they do not appear
+
+- **Refresh** the group's member list or the Members page (filter by that group). Sync can be delayed briefly.
+- Confirm you added the **correct member** (same name/email) and the **correct group**. Open the group and check the member list.
+- If you added from the Members page, confirm you clicked **Save** or **Add to group** after selecting the group.
+
+### The group does not appear in the email or event invite dropdown
+
+- Ensure the group **exists** and was **saved**. Go to **Groups** and confirm it is in the list.
+- Ensure you have permission to send emails or manage events (you must be an **admin**). Refresh the page and try again.
+- If you have many groups, scroll the dropdown or use search if the UI supports it.
+
+## Wrong recipients or invitees
+
+### Someone received an email (or event invite) but they are not in the group
+
+- They might be in **another group** you selected, or you may have also selected **All members** or added individuals. Check the recipient list or send summary before sending.
+- If you recently **removed** them from the group, the send may have run before the removal. Check when the email was sent vs when you edited the group.
+
+### Someone in the group did not receive the email (or invite)
+
+- Confirm they have a valid **email** address in their member record. Members without email are skipped.
+- Check **Campaigns** or sent history to see if the email was marked **sent** or **failed** for that recipient. See [Emails troubleshooting](/emails/troubleshooting).
+- For event invites: confirm you **sent invites** after adding the group, and that the member was in the group at the time of send.
+
+## Create and delete
+
+### I cannot create a group
+
+- You must be an **admin** to create or edit groups. See [Roles and permissions](/members/roles-and-permissions).
+- If the **Create group** button is missing, refresh and ensure you are in the correct organization (club switcher).
+
+### I deleted a group by mistake
+
+- Deletion is permanent. Recreate the group with the same name and [re-assign members](/groups/assign-members) manually. Past emails or event invites that used the old group are unchanged in history.

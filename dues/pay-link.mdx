@@ -1,0 +1,31 @@
+---
+title: "Pay link"
+description: "Share the dues pay link so members can pay online"
+icon: "link"
+---
+
+Each dues assignment has a **pay link**: a unique URL the member opens to enter payment details and complete payment. After they pay, the assignment status becomes **paid**.
+
+## Get the pay link
+
+1. Go to **Finance** → **Dues** and open the assignment (or find it in the list).
+2. Copy the **pay link** (e.g. **Copy link** or a URL like `rowhouse.co/dues/[duesId]/pay`). The link is unique per assignment and usually does not expire.
+3. Share it with the member by email, text, or your preferred channel.
+
+<Tip>
+Send the link in an [email](/emails/overview) or include it in a template (e.g. "Pay your dues: {{pay_link}}") so each member gets their own link. Do not post the same link publicly if each link is tied to one assignment.
+</Tip>
+
+## What the member sees
+
+- They open the link and see the **amount**, **description**, and (if set) **due date** and [dues group](/dues/dues-groups) content.
+- They may need to enter **name**, **email**, **phone** (for first-time or guest payers). If they are already a member, their info may be pre-filled or updated on payment.
+- They enter **card** details (Stripe). After success, they see a **success** page and the assignment is marked **paid** in your Dues list. You can see the payment in [Transactions](/finance/transactions).
+
+## Success page
+
+- After payment, the member is redirected to a **success** URL (e.g. `rowhouse.co/dues/[duesId]/success`). You can mention this in your email so they know payment went through.
+
+## If the link does not work
+
+- Confirm the assignment still exists and was not deleted or cancelled. See [Troubleshooting](/dues/troubleshooting). If the member already paid, the link may show "already paid" or similar.

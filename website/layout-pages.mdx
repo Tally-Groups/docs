@@ -1,0 +1,32 @@
+---
+title: "Layout pages"
+description: "Use layout pages to wrap child pages (header/footer)"
+icon: "layer-group"
+---
+
+A **layout page** is a special page that **wraps** other pages (e.g. shared header and footer). Child pages render inside the layout instead of as standalone full pages.
+
+## What is a layout page?
+
+- In the [page editor](/website/page-editor), the **root** (page) properties include **Layout** (or **isLayout**). When set to **Yes** (true), the page is a layout: its content (e.g. header, nav, footer) wraps **child** pages.
+- Child pages are pages whose slug or hierarchy is under this layout (exact behavior depends on how your site resolves routes). They do not need to be "attached" manually in some setups; the router uses the slug structure.
+
+<Note>
+Exact behavior (how child pages are assigned to a layout, and URL structure) can vary. Check your app or theme: sometimes a layout is applied to all pages, or to pages under a certain slug prefix.
+</Note>
+
+## When to use a layout
+
+- **Shared header/footer**: One layout page with nav and footer; all other pages render inside it.
+- **Section layout**: A layout for a section (e.g. `/events/*`) with its own sub-nav; child pages under that path use it.
+
+## Creating a layout page
+
+1. Create a [page](/website/pages) as usual (e.g. slug `_layout` or `layout`—name depends on your app).
+2. In the [page editor](/website/page-editor), set **Layout** to **Yes** (or **isLayout** = true).
+3. Add the shared content (header, footer, optional sidebar) and a **zone** or **slot** where child content will render (if your editor supports it).
+4. Save and [publish](/website/publishing). Child pages will render inside this layout according to your site's routing.
+
+<Tip>
+If you are unsure how layouts and child pages are matched, create one layout and one normal page, publish both, and check the URLs to see which page uses the layout.
+</Tip>

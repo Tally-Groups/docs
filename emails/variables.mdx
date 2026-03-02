@@ -1,0 +1,37 @@
+---
+title: "Email variables"
+description: "Use {{name}}, {{email}}, and custom variables in templates and drafts"
+icon: "code"
+---
+
+**Variables** in templates and drafts are placeholders that get **replaced per recipient** when you send (e.g. `{{name}}` becomes "Jane"). Use them in the subject and body for personalization.
+
+## Built-in variables
+
+- **`{{name}}`**: Recipient's name (from their member record). Use in subject or body: "Hi {{name}}, ..."
+- **`{{email}}`**: Recipient's email address. Use when you need to show or link to their email.
+
+These are filled automatically from the member's profile when you send to members or groups.
+
+## Custom variables (drafts)
+
+- In a [draft](/emails/drafts), you can define **custom variables** (e.g. `event_date`, `link_url`, `message`).
+- In the template **subject** and **body**, use the same name in double curly braces: `{{event_date}}`, `{{link_url}}`.
+- When sending, you set the values for that draft (e.g. `event_date` = "March 15, 2026"). Every recipient gets the same value for custom variables; only `{{name}}` and `{{email}}` vary per recipient.
+
+<Tip>
+Use custom variables for one-off content (event date, registration link) so you do not need a new template for each send.
+</Tip>
+
+## Syntax
+
+- Use **double curly braces**: `{{variable_name}}`. Names are usually letters, numbers, and underscores.
+- If a variable is not set or misspelled, it may appear as literal `{{variable_name}}` in the sent email. Check your draft's variable list and template spelling.
+
+## Where variables work
+
+- **Subject line**: Full support (e.g. "Reminder for {{name}}").
+- **Body**: Full support in text and in links (e.g. `href="https://example.com?email={{email}}"`).
+- **Per-recipient**: Only `{{name}}` and `{{email}}` are different per recipient; custom variables are the same for everyone in that send.
+
+See [Troubleshooting](/emails/troubleshooting) if variables do not replace or show as literal text.

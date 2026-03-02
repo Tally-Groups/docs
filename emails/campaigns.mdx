@@ -1,0 +1,31 @@
+---
+title: "Campaigns (sent history)"
+description: "View sent emails, status, and open tracking"
+icon: "chart-line"
+---
+
+**Campaigns** (or **Sent** / **Sent emails**) is the history of emails you have sent. You can see which draft was used, who received it, delivery status, and (if enabled) who opened it.
+
+## View campaigns
+
+1. Go to **Emails** → **Campaigns** (or **Sent**).
+2. You see a list of sends: draft name, send date, recipient count, and optionally status (e.g. sent, failed, pending).
+3. Click a send to see **per-recipient** details: email address, status (sent/failed/pending), and if [open tracking](/emails/tracking) is on, whether they opened the email.
+
+<Tip>
+Use this to confirm delivery after a large send and to follow up with anyone who failed (e.g. invalid email) or did not open.
+</Tip>
+
+## Statuses
+
+- **Sent**: Delivered to the provider (e.g. Resend); the recipient's server accepted it. It may still land in spam.
+- **Failed**: Bounce, invalid address, or provider error. Fix the member's email in [Members](/members/edit-and-remove) and resend if needed.
+- **Pending**: Queued or in progress (for background sends). Check again later.
+
+## Open tracking
+
+- If your plan and settings support it, **opens** are recorded when the recipient loads images or tracking pixels in the email. See [Tracking](/emails/tracking). Opens appear per recipient in the campaign detail view.
+
+## Resend to failed recipients
+
+- If the UI offers **Resend to failed**, you can resend the same draft only to recipients who had status **failed** after fixing their email addresses. Otherwise, create a new draft or send and select those members manually.

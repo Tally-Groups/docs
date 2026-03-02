@@ -1,0 +1,47 @@
+---
+title: "Custom columns"
+description: "Add custom fields to your member list (e.g. graduation year, shirt size)"
+icon: "table-columns"
+---
+
+Custom columns let you store extra information for each member (e.g. graduation year, shirt size, committee) and use it for filtering and display.
+
+## Add a custom column
+
+1. Go to **Members** and open **Custom columns** (or **Settings** → **Member columns**, depending on your app).
+2. Click **Add column** (or **Add custom column**).
+3. Set:
+   - **Name**: Internal name used in the list and for CSV mapping (e.g. `Graduation Year`). Use letters, numbers, spaces; avoid special characters if you use CSV import.
+   - **Data type**: **String**, **Number**, **Date**, or **Boolean**.
+   - **Sort order**: Order in which the column appears in the list (lower numbers first).
+4. Save. The column appears in the member list and in the add/edit member form.
+
+<Note>
+Column names must be unique per organization. After creation, changing the name may affect CSV imports that use the old name.
+</Note>
+
+## Data types
+
+- **String**: Text (e.g. major, shirt size "M").
+- **Number**: Numeric values (e.g. graduation year 2026, ID number).
+- **Date**: Date only (e.g. join date, birth date).
+- **Boolean**: Yes/No or true/false (e.g. "Board member", "Paid member").
+
+## Fill in values
+
+- **Per member**: When [editing a member](/members/edit-and-remove), fill in the custom column values.
+- **Bulk**: Use [CSV upload](/members/csv-upload) and include a column whose header matches the custom column name exactly. Rowhouse will map and import those values.
+
+## Filter and sort
+
+- In the Members list, use [filters](/members/filters-and-search) to show only members where a custom column equals (or contains) a value.
+- Sort by a custom column if the UI supports it (column header click or sort dropdown).
+
+<Tip>
+Use consistent values (e.g. "2025" not "Fall 2025" for a graduation year number column) so filtering and sorting work as expected.
+</Tip>
+
+## Reorder or remove
+
+- **Reorder**: Change the **sort order** of custom columns so they appear in the order you want.
+- **Remove**: Delete the column from the custom columns settings. Existing values for that column are removed from member records; other data is unchanged.

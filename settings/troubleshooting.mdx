@@ -1,0 +1,35 @@
+---
+title: "Settings troubleshooting"
+description: "Fix plan upgrade, Stripe connection, and logo upload"
+icon: "wrench"
+---
+
+Common issues with club settings and subscription.
+
+## Cannot change plan or upgrade
+
+- **Payment method**: Ensure you have a valid **payment method** on file. Use **Update payment method** (or the billing portal link) to add or fix a card. Declined cards block upgrades.
+- **Already on plan**: If you are already on the plan you want, there is nothing to change. If you want a higher plan, use **Upgrade** and select the new plan.
+- **Permissions**: Only **admins** can change the subscription. If you are a member, ask an admin to upgrade or promote you to admin. See [Roles and permissions](/members/roles-and-permissions).
+
+## Stripe not connected or incomplete
+
+- **Complete onboarding**: Open **Settings** → **Stripe** (or **Payments**) and click **Complete setup** or **Connect Stripe**. Finish all steps Stripe asks for (identity, bank, EIN if required). See [Stripe Connect](/getting-started/stripe-connect).
+- **Re-onboard**: If Stripe later asks for more info (e.g. annual verification), use the same **Complete setup** link and submit the requested details. Status should return to complete.
+- **New bank**: If you need to change the bank account, add or update it in Stripe (via Rowhouse **Add bank account** or Stripe Dashboard). Do not disconnect Connect just to change the bank.
+
+## Logo upload fails
+
+- **Format**: Use a common image format (e.g. JPG, PNG) and a reasonable size (e.g. under 2 MB). Very large or unsupported formats can fail.
+- **Browser**: Try another browser or disable extensions. Clear cache and try again.
+- **Permissions**: You must be an **admin** to upload the club logo. Confirm you are in the correct org (club switcher).
+
+## Join code or invite link not working
+
+- **Join code**: Verify the code in **Settings** (no extra spaces). Share the exact code. If you changed it, the old code no longer works. See [Join code and invite](/settings/join-code-and-invite).
+- **Invite link**: Ensure you copied the full URL. If the link is token-based, it may expire after a time; generate or copy a fresh link. For "cannot join" errors, see [Getting started troubleshooting](/getting-started/troubleshooting).
+
+## I do not see Settings
+
+- **Role**: Only **admins** see **Settings** and **Subscription** in the sidebar. If you are a **member**, you will not see them. Ask an admin to promote you or to make the change you need. See [Roles and permissions](/members/roles-and-permissions).
+- **Org**: Confirm you are in the correct **organization** (club switcher). Settings are per org.

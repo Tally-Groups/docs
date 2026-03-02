@@ -1,0 +1,32 @@
+---
+title: "Merch troubleshooting"
+description: "Fix store not loading, variant issues, and checkout errors"
+icon: "wrench"
+---
+
+Common issues with the storefront and merch.
+
+## Store not loading or 404
+
+- **URL**: Confirm you are using the correct store URL (e.g. `rowhouse.co/store/your-org-slug`). Check **Merch** for the "Store link" or "View store" button to copy the exact URL.
+- **Slug**: Ensure your org has a valid **slug** and that the merch group slug is correct. Typos in the URL cause 404.
+- **Publish**: Some apps require the merch group to be "published" or "active". Check the group settings and ensure it is visible on the store.
+- **Plan**: Merch may require a **paid plan**. See [Subscription](/settings/subscription) and [Plan limits](/guides/plan-limits).
+
+## Variant out of stock or wrong price
+
+- **Options**: Each variant (e.g. M Blue) must have an **option** with the correct **amount**. If the price is wrong, edit the merch group and fix the option amount. See [Products and variants](/merch/products-and-variants).
+- **Mapping**: If the customer selects Size M and Color Blue but the wrong price appears, check that the option **metadata** (e.g. `{"size":"M","color":"Blue"}`) matches your custom property values. Spelling and case must match.
+- **Out of stock**: If you use inventory and a variant is out of stock, disable or remove that option (or set quantity to 0) so it does not appear or shows "Out of stock". When inventory is not supported, manage stock offline and update options as needed.
+
+## Checkout errors
+
+- **Payment declined**: The customer should try another card or contact their bank. Rowhouse does not control declines.
+- **Stripe**: Checkout requires [Stripe Connect](/getting-started/stripe-connect) to be complete for your org. If Connect is incomplete, checkout will fail. Complete onboarding and try again.
+- **Browser**: Have the customer try a different browser or device, and disable extensions that might block Stripe.
+- **Cart empty**: If the cart is empty at checkout, the session may have expired. They can add items again and checkout.
+
+## Order not showing in Transactions
+
+- **Wait**: After payment, the transaction can take a few seconds to appear. Refresh **Finance** → **Transactions** and filter by type "merch" or "store" if available.
+- **Webhook**: If Stripe webhooks were delayed or failed, the order might sync later. If the charge appears in Stripe but not in Rowhouse, contact support so they can reconcile.

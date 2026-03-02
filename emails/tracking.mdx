@@ -1,0 +1,27 @@
+---
+title: "Open tracking"
+description: "See who opened your emails"
+icon: "chart-simple"
+---
+
+**Open tracking** records when a recipient opens an email (e.g. by loading a tracking pixel). You can see opens per recipient in [Campaigns](/emails/campaigns).
+
+## How it works
+
+- When you send an email, Rowhouse (via the email provider, e.g. Resend) may add a small tracking pixel or link to the email.
+- When the recipient's email client loads images or that link, an **open** is recorded and tied to that recipient in the campaign.
+- Opens are shown in the campaign detail view (per-recipient) and sometimes in a summary (e.g. "45% opened").
+
+<Note>
+Open tracking is not 100% accurate: some clients block images, and some opens are counted multiple times (e.g. multiple opens by the same person). Use it as a rough engagement signal.
+</Note>
+
+## Privacy and compliance
+
+- Tracking is common for marketing and operational emails. Ensure your use complies with your policies and applicable law (e.g. consent, privacy notice). Rowhouse does not control how you use the data; you are responsible for compliance.
+
+## If opens are not showing
+
+- **Plan**: Open tracking may be a paid feature. Check [Plan limits](/guides/plan-limits) and [Subscription](/settings/subscription).
+- **Provider**: Tracking depends on the email provider (e.g. Resend webhooks). If the provider does not support or deliver open events, Rowhouse cannot display them.
+- **Recipient client**: Some email clients block images by default, so the open is never recorded. This is expected for a portion of recipients.

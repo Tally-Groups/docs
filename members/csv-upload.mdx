@@ -1,0 +1,46 @@
+---
+title: "CSV upload"
+description: "Import members from a CSV file and map columns"
+icon: "file-csv"
+---
+
+Import many members at once by uploading a CSV file. Rowhouse maps columns to name, email, phone, and optional custom fields.
+
+## Prepare your CSV
+
+1. Create a spreadsheet (Excel, Google Sheets) with one row per member.
+2. **First row** must be headers. Use recognizable column names so Rowhouse can map them:
+   - **email** (or Email)
+   - **first_name** (or First Name, firstName)
+   - **last_name** (or Last Name, lastName)
+   - **name** (full name if you do not use first/last)
+   - **phone** (or Phone)
+   - Any [custom column](/members/custom-columns) names you have defined (exact match)
+3. Save or export as **CSV** (comma-separated values). UTF-8 encoding is best for special characters.
+
+<Warning>
+If you use custom columns, create those columns in Rowhouse first (Members, Custom columns or Settings). The CSV headers must match the custom column names exactly.
+</Warning>
+
+## Upload and map
+
+1. Go to **Members** and click **Import** (or **Upload CSV**).
+2. Select your CSV file or drag it into the upload area.
+3. Rowhouse will preview the first rows and suggest column mapping. Confirm or change which CSV column maps to email, first name, last name, phone, and custom fields.
+4. Review duplicates: if a row has an email that already exists in the org, you may be asked to skip, update, or add as duplicate. Prefer **Skip** or **Update** to avoid duplicate members.
+5. Start the import. The import may run in the background for large files. Check the Members list or any success/error message when it finishes.
+
+<Tip>
+For very large files (e.g. thousands of rows), split into smaller CSVs or run one import at a time to avoid timeouts.
+</Tip>
+
+## After import
+
+- New members appear in the **Members** list. You can [edit](/members/edit-and-remove) any of them.
+- If some rows failed (e.g. invalid email, duplicate), Rowhouse may show a summary or export of failures. Fix the CSV and re-import the failed rows if needed.
+
+## Troubleshooting
+
+- **Column not found**: Ensure custom column names in the CSV match exactly the names in Rowhouse (case-sensitive).
+- **Duplicates**: Use the duplicate handling option during mapping, or clean your CSV so each email appears once.
+- **Import fails or times out**: Reduce file size (e.g. under 1,000 to 2,000 rows per file) and try again. See [Members troubleshooting](/members/troubleshooting).

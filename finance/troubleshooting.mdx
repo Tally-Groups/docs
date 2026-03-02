@@ -1,0 +1,32 @@
+---
+title: "Finance troubleshooting"
+description: "Payout delayed, missing transaction, fee questions"
+icon: "wrench"
+---
+
+Common issues with transactions, payouts, and fees.
+
+## Payout delayed
+
+- **Schedule**: Payouts follow Stripe's schedule (e.g. 2 business days or weekly). Check your [Stripe Dashboard](https://dashboard.stripe.com) for the exact payout date and status.
+- **First payout**: New accounts often have a longer first payout (e.g. 7–14 days). After that, payouts follow the normal schedule.
+- **Bank**: Ensure your [bank details](/getting-started/bank-details) are correct. Wrong routing or account number can delay or block payouts. Update in Stripe or via Rowhouse and wait for the next cycle.
+- **Failed**: If a payout shows **failed**, fix the bank account and contact Stripe. The funds may be retried or returned to your Stripe balance; Stripe support can confirm.
+
+## Missing transaction
+
+- **Wait**: After a payment, the transaction can take a few seconds to appear. Refresh **Finance** → **Transactions** and expand the date range.
+- **Webhook**: Rowhouse records transactions when Stripe sends success webhooks. If Stripe had an outage or the webhook failed, the transaction might sync later. If the charge appears in your Stripe Dashboard but not in Rowhouse, contact support.
+- **Filter**: Ensure you are not filtering by type or date in a way that hides the transaction. Try "All" and a wide date range.
+- **Org**: Confirm you are in the correct **organization** (club switcher). Transactions are per org.
+
+## Fee questions
+
+- **Amount charged**: The amount the member paid may include the [processing fee](/finance/processing-fees) (base + fee). Your org typically receives the base amount; the fee covers Rowhouse and/or Stripe. See [Processing fees](/finance/processing-fees).
+- **Plan**: Your fee rate depends on your [subscription](/settings/subscription) plan. Upgrade to a higher plan to reduce the fee percentage.
+- **Refunds**: Refunds are usually for the amount the customer paid. Fees may or may not be refunded; check Stripe and your plan terms.
+
+## Finance section locked
+
+- **Plan**: Finance (Transactions, Dues, Merch, Payouts) usually requires a **paid plan**. See [Subscription](/settings/subscription) and [Plan limits](/guides/plan-limits). Upgrade to unlock.
+- **Stripe**: You must complete [Stripe Connect](/getting-started/stripe-connect) to accept payments. Until Connect is complete, payment features are disabled or limited.

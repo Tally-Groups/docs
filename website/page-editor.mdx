@@ -1,0 +1,34 @@
+---
+title: "Page editor"
+description: "Build pages with the Puck drag-and-drop editor"
+icon: "pen-to-square"
+---
+
+The **page editor** is a visual (Puck) editor where you add and arrange **blocks** (sections, text, images, buttons) to build your page. No code required.
+
+## Open the page editor
+
+- From **Website** → **Pages**, open a page and click **Edit** (or **Open in editor**). The editor loads with the page's current content (or empty for a new page).
+
+## How the editor works
+
+- **Canvas**: The main area shows the page as it will appear. You click elements to select them and edit in the **property panel** (right side).
+- **Blocks / components**: Add blocks from a sidebar or panel: e.g. **Text**, **Image**, **Button**, **Columns**, **Hero**. Drag to reorder.
+- **Properties**: When a block is selected, the right panel shows options (text content, link, image URL, colors, spacing). Root (page) props often include **title**, **slug**, **description**, **layout** (is this a layout page?), and **published** (draft vs published).
+- **Save**: Save regularly. Use **View live** (or **Preview**) to open the public URL in a new tab; only **published** pages are visible to the public. See [Publishing](/website/publishing).
+
+<Tip>
+Start with a simple layout (e.g. hero + text + CTA button) and add more sections as needed. You can always reorder or remove blocks.
+</Tip>
+
+## Layout vs standalone page
+
+- **Standalone**: Normal page (default). It renders as a full page at its slug.
+- **Layout**: When **Layout** (isLayout) is enabled, the page acts as a wrapper (e.g. header/footer) around **child** pages. See [Layout pages](/website/layout-pages).
+
+## After editing
+
+- **Save** to keep changes. If the page is already published, saving updates the live page. If it is draft, [publish](/website/publishing) when ready.
+- **Close** returns you to the Pages list. Your last save is preserved.
+
+See [Troubleshooting](/website/troubleshooting) if the editor does not load or save fails.

@@ -1,0 +1,30 @@
+---
+title: "Payouts"
+description: "When and how you receive money in your bank account"
+icon: "building-columns"
+---
+
+**Payouts** are transfers from Stripe to your connected **bank account**. After customers pay (dues, events, merch), Stripe holds the funds and then sends them to you on a schedule (e.g. rolling or weekly).
+
+## Where to find it
+
+- **Finance** → **Payouts** in the sidebar. You see a list of payouts: date, amount, status (pending, paid, failed), and optional Stripe batch ID or link.
+
+## Payout schedule
+
+- **Stripe controls the schedule**, not Rowhouse. Common patterns: **rolling** (e.g. 2 business days after the charge) or **weekly** (e.g. every Wednesday). Check your [Stripe Dashboard](https://dashboard.stripe.com) for your exact schedule and bank account.
+- **First payout**: New connected accounts may have a longer first payout (e.g. 7–14 days) while Stripe verifies. After that, payouts follow the normal schedule.
+
+## Statuses
+
+- **Pending**: Payout has been initiated but not yet sent to your bank.
+- **Paid** (or **In transit**): Sent to your bank; allow 1–3 business days for the bank to post it.
+- **Failed**: Stripe could not complete the payout (e.g. invalid bank details). Update your [bank account](/getting-started/bank-details) and contact Stripe if needed.
+
+## Instant payouts (if enabled)
+
+- Some accounts can enable **instant payouts**: funds are sent to your bank within minutes (for a fee). See [Instant payouts](/settings/instant-payouts) if your org has this option. Otherwise, standard schedule applies.
+
+## Disputes and refunds
+
+- **Disputes** and **refunds** are handled in Stripe. They reduce your balance and may affect upcoming payouts. Rowhouse may show a transaction as refunded; for full details use the Stripe Dashboard.

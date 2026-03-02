@@ -1,0 +1,43 @@
+---
+title: "Events troubleshooting"
+description: "Fix invite delivery, payment, RSVP, and attendance issues"
+icon: "wrench"
+---
+
+Common issues with events, invites, RSVP, and payments.
+
+## Invites not received
+
+- **Check spam/promotions** for the invite email. Ask the invitee to add the sender to contacts.
+- **Confirm email address**: In **Members**, ensure the member has the correct email. Edit if needed and **resend** the invite (if the UI allows).
+- **Send invites**: After adding invitees, you must click **Send invites**. If you only added them but did not send, they will not receive an email.
+- **Bulk send**: Large invite lists may be sent in the background. Wait a few minutes and check **Campaigns** or send status; if some failed, resend to failed recipients.
+
+## RSVP link expired or not working
+
+- Links can expire or be single-use in some setups. Use **Resend invite** (if available) to send a fresh link to that invitee.
+- Ensure the invitee is opening the link from the **same email address** they were invited with. Some links are tied to the invitee record.
+- If the event is in the past, RSVP may be closed. Create a new event or mark the current one as cancelled if appropriate.
+
+## Payment failed or pay link broken
+
+- **Member**: Have them try again (card declined, network error). Use a different card or browser. Ensure they are using the link from their **invite email**, not a generic event page.
+- **You**: Confirm the event has an **amount** set and the org has completed [Stripe Connect](/getting-started/stripe-connect). Check **Finance** → **Transactions** for the event to see if a payment was attempted and failed (with reason).
+- **Waive**: If they should not pay, [waive](/events/event-payments) their invite so they can RSVP without paying.
+
+## Attendance not saving
+
+- **Save**: After marking attendance, click **Save** or **Submit**. If you leave the page without saving, changes are lost.
+- **Link**: Use the **attendance link** from the event (Attendance section). Do not use the public event page or RSVP link for marking attendance.
+- **Geolock**: If [attendance geolock](/events/attendance) is on and you are not at the venue, enable device location and try again or turn off geolock for that event if you have permission.
+
+## Event not showing / wrong list
+
+- **Calendar**: If you use [calendars](/events/calendars), filter by calendar or "All" to see the event.
+- **Past events**: Switch the list to **Upcoming** vs **Past** (if the UI has that filter).
+- **Org**: Confirm you are in the correct **organization** (club switcher). Events are per org.
+
+## Duplicate or missing invitees
+
+- **Duplicate**: Remove the duplicate from the invitee list. If they already paid, contact support before deleting; you may need to refund or keep one record.
+- **Missing**: Re-add the member (or group) and **Send invites** again so they receive the email.

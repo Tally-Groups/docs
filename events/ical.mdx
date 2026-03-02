@@ -1,0 +1,38 @@
+---
+title: "iCal feed"
+description: "Subscribe to events in Google Calendar or Apple Calendar"
+icon: "calendar"
+---
+
+Rowhouse can provide an **iCal feed** (ICS) so members or the public can subscribe to your organization's events in Google Calendar, Apple Calendar, Outlook, or other calendar apps.
+
+## How to get the feed URL
+
+- From **Events** or **Calendars**, or from your org's public page, look for **iCal feed**, **Subscribe to calendar**, or **Calendar feed**.
+- The URL may be per **calendar** (e.g. only "Social events") or for **all events** in the org. It often looks like: `rowhouse.co/api/calendar/[org]/[tag]` or similar (your org slug and optional calendar tag).
+- Copy the feed URL. Do not share private tokens publicly if the URL contains a secret.
+
+## Subscribe in a calendar app
+
+**Google Calendar:**
+
+1. Open Google Calendar on the web, go to **Other calendars** → **Add by URL**.
+2. Paste the iCal feed URL and click **Add**. Events appear and update when the feed is refreshed.
+
+**Apple Calendar:**
+
+1. In Calendar, go to **File** → **New Calendar Subscription** (or **Add Account** for a URL).
+2. Paste the feed URL and set refresh interval. Save.
+
+**Outlook / other:**
+
+- Use the app's option to **Add calendar** or **Subscribe from URL** and paste the feed URL.
+
+<Note>
+Calendar apps refresh the feed periodically (e.g. every few hours). New or updated events may take a while to appear.
+</Note>
+
+## What appears in the feed
+
+- Events that are **public** or that the feed is allowed to expose (depending on configuration). Start time, end time, title, and sometimes location and description are included.
+- Past events may remain in the feed for history; your calendar app may hide them depending on its settings.

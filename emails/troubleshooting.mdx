@@ -1,0 +1,36 @@
+---
+title: "Emails troubleshooting"
+description: "Fix sending failures, wrong recipients, and variable issues"
+icon: "wrench"
+---
+
+Common issues with templates, drafts, and sending.
+
+## Emails not sending
+
+- **Plan**: Emails (templates, send) may require a **paid plan**. See [Subscription](/settings/subscription) and [Plan limits](/guides/plan-limits). Upgrade if needed.
+- **Recipients**: Ensure you selected at least one [recipient](/emails/recipients) (group, all members, or list) and that those members have **email addresses**. Members without email are skipped.
+- **Workflow/background**: Large sends run in the background. Wait a few minutes and check [Campaigns](/emails/campaigns) for status. If the workflow failed, you may see an error in the app or support can help.
+- **Provider**: Sending uses an email provider (e.g. Resend). If the provider is down or rejecting (e.g. invalid API key), sends will fail. Check status pages or app/support for provider errors.
+
+## Wrong recipient or missing recipient
+
+- **Wrong group**: Confirm you selected the correct [group](/groups/using-groups-in-emails). Check the recipient count before sending; if it looks wrong, change the selection.
+- **Missing member**: Ensure the member is in the **group** (or in "All members") and has an **email** address. Edit the member in [Members](/members/edit-and-remove) and add them to the group or fix their email, then resend.
+- **Duplicate**: If someone is in multiple groups you selected, they receive the email once. No duplicate sends per recipient.
+
+## Variables not replacing / showing as literal text
+
+- **Spelling**: Variable names are case-sensitive. Use exactly `{{name}}` and `{{email}}` (lowercase). Custom variables must match the name you set in the [draft](/emails/drafts) (e.g. `{{event_date}}`).
+- **Custom variables**: For custom variables, you must **set values** in the draft before sending. If a variable is left blank or misspelled in the template, it may appear as `{{variable_name}}` in the sent email.
+- **Spaces**: Do not put spaces inside the braces: use `{{name}}` not `{{ name }}`.
+
+## Draft or template not found
+
+- **Draft**: Ensure the draft was **saved**. Open **Drafts** and confirm it is in the list. If you are in a different **organization** (club switcher), you will not see another org's drafts.
+- **Template**: Same as above for **Templates**. Only admins can create and edit templates; if you are a member, you may not see the Templates section.
+
+## Campaign / open tracking
+
+- **Sent status**: Check [Campaigns](/emails/campaigns) for per-recipient status (sent, failed, pending). **Failed** usually means invalid email or bounce; fix the email and resend to that person if needed.
+- **Opens**: [Open tracking](/emails/tracking) depends on your plan and the email provider. Some clients block images, so not every open is recorded.

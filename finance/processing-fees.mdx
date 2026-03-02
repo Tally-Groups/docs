@@ -1,0 +1,30 @@
+---
+title: "Processing fees"
+description: "Fees by plan for dues, events, and merch"
+icon: "percent"
+---
+
+Rowhouse applies **processing fees** on payments (dues, events, merch). The fee depends on your **subscription plan**. The member or customer typically pays the fee (added to the amount) or it is deducted from your share; exact behavior may vary by product.
+
+## Fee structure (typical)
+
+- **Free**: e.g. 10% + 30c per transaction (or similar).
+- **Pro**: e.g. 8% + 30c per transaction.
+- **Premium**: e.g. 5% + 30c per transaction.
+
+<Note>
+Exact percentages and fixed amounts are defined in the app (e.g. `getEventProcessingFeeCents` or pricing logic). Check your [Subscription](/settings/subscription) page or [Plan limits](/guides/plan-limits) for the current fees for your plan.
+</Note>
+
+## Who pays the fee?
+
+- Often the **payer** (member or customer) is charged the base amount **plus** the processing fee so your org receives the full base amount. Example: $50 dues + fee → member pays $50 + fee; you receive $50 (minus Stripe's own fees, which may be included in the percentage).
+- In some setups the fee is deducted from your side. Your **Transactions** or **Payouts** view may show net amounts; check the UI or support for your case.
+
+## Stripe fees
+
+- Stripe also charges their own fees (e.g. 2.9% + 30c in the US). The Rowhouse processing fee may be on top of that or may be all-in. Read your plan and Stripe dashboard to understand total cost.
+
+## Reducing fees
+
+- **Upgrade plan**: Higher tiers (e.g. Pro, Premium) usually have lower processing fees. See [Subscription](/settings/subscription) to upgrade.

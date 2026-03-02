@@ -1,80 +1,71 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Get your organization on Rowhouse in a few steps"
 ---
 
-## Get started in three steps
+Follow these steps to go from sign-up to collecting dues or running your first event.
 
-Get your documentation site running locally and make your first customization.
+## Step 1: Sign up
 
-### Step 1: Set up your local environment
+1. Go to [Rowhouse](https://rowhouse.co) and click **Sign up** (or **Get started**).
+2. Sign up with **email** or **Google**.
+3. If you use email, verify your address using the link we send.
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+<Tip>
+Use the same email you'll use for your organization so you can be added as an admin.
+</Tip>
 
-### Step 2: Deploy your changes
+## Step 2: Create or join an organization
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+**Create a new organization**
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+1. After signing in, click **Create Club** (or use the club switcher in the sidebar).
+2. Enter your **organization name** and choose a **slug** (e.g. `my-club` for `rowhouse.co/my-club`).
+3. Complete the onboarding steps: connect Stripe (for payments), add bank details if you'll receive payouts, and finish your profile if prompted.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+**Join an existing organization**
 
-### Step 3: Go live
+1. Use the **Join Club** option in the sidebar, or open the invite link your admin shared.
+2. Enter the **join code** if you have one, or sign in and accept the invite.
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+See [Create an organization](/getting-started/create-organization) and [Join an organization](/getting-started/join-organization) for details.
+
+## Step 3: Add members
+
+1. Go to **Members** in the sidebar.
+2. Click **Add member** and enter name, email, and optionally phone.
+3. For many members at once, use **Import** and upload a CSV. See [CSV upload](/members/csv-upload) for column mapping and format.
+
+<Note>
+Members can also join via a public join link or by paying dues/event fees; they'll be created automatically.
+</Note>
+
+## Step 4: Set up your first dues or event
+
+**Dues**
+
+1. Go to **Finance** → **Dues**.
+2. Optionally create a [dues group](/dues/dues-groups) (e.g. "Fall 2025 dues") with a default amount.
+3. Select members and click **Assign dues**. Enter amount, description, and optional due date.
+4. Share the **pay link** with members so they can pay online. See [Assigning dues](/dues/assigning-dues) and [Pay link](/dues/pay-link).
+
+**Event**
+
+1. Go to **Events** and click **Create event**.
+2. Enter title, date/time, location, and optionally a payment amount.
+3. **Invite members** and send invites. Members can RSVP and pay (if the event has a fee) via the link in the email. See [Create event](/events/create-event) and [Invite members](/events/invite-members).
 
 ## Next steps
 
-Now that you have your docs running, explore these key features:
+- **Groups**: Create groups (e.g. "Board", "Class of 2026") and use them to [send emails to a group](/groups/using-groups-in-emails) or manage event invitees.
+- **Emails**: Create [templates](/emails/templates) and [drafts](/emails/drafts), then [send](/emails/sending) to members or groups.
+- **Website**: Build your org's site with [Pages](/website/pages) and the [page editor](/website/page-editor).
+- **Merch**: Set up a [merch group](/merch/create-merch-group) and [storefront](/merch/storefront) to sell items with variants.
 
-<CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
+<Card
+  title="Plan limits"
+  icon="list-check"
+  href="/guides/plan-limits"
+>
+  See what's included in free vs pro vs premium.
 </Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
-</CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
